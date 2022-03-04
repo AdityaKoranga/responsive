@@ -1,0 +1,224 @@
+/*CSS RESET*/
+
+*{
+    margin:0;
+    padding:0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height: 59px;
+    
+}
+/* Navigation bar  */
+#navbar{
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(39, 31, 31);
+    position: relative;
+    top: 0px;
+    
+}
+/* Logo and image:navbar  */
+#logo{
+    margin: 1px 1px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#navbar ul{
+    display: flex; 
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.7rem;
+
+}
+#navbar ul li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    display: block;
+    padding: 3px 100px;
+    border-radius: 23px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+/* list and styling: navaba endsr */
+/* HOme bar  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;
+}
+#home::before{
+    content: "";
+    background: url(../images/backgroundimg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 651px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h2{
+    color: white;
+    text-align: center;
+    font-family: " Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:" Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+}
+/* services sevtion */
+#services{
+    margin: 71px 25px;
+    display: flex;
+    height: 310px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 11px;
+    margin: 1px 7px;
+    border-radius: 24px;
+    background: #f2f2f2;
+}
+#services .box img{
+    
+    height: 152px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    /* font-size: 1.8rem; kaafi bada ho jayega*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Client sextion */
+#client-section{
+    position: relative;
+}
+#clients::before{
+    content: "";
+    background: url(../images/table-g7c00361b6_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 66%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clients img{
+    height: 124px;
+}
+.client-item{
+    padding: 34px;
+}
+/* utility classes */
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8; 
+    background: url(../images/table-g7c00361b6_1920.jpg); 
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    
+
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(194, 42, 42);
+    color: white;
+    font-size: 15px;
+    margin: 17px ;
+    cursor: pointer;
+    border-radius: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn:hover{
+    background-color: black;
+    color: wheat;
+    font-size: medium;
+}
+.center{
+    text-align: center;
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            /* box-shadow: 10px 13px wheat; */
+            /* box-shadow: 7px 8px 10px wheat; */
+            box-shadow: -7px -5px 10px 34px wheat;
+            box-shadow: -7px -5px 10px 34px rgb(167, 136, 80);
+            /* box-shadow: offsetx offsety blur_radius spread_radius COLOR; */
+            /* agar box k andar shadow chahiye to */
+            box-shadow: inset 3px 5px wheat;
+
+        }
+        .card h2{
+            text-shadow:2px 1px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h2>this is c++course</h2> 
+           <p>i will stufy c++Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, corporis provident maiores in a ut fugit sint dolore, enim aliquid veniam, cupiditate accusantium consectetur minus quae iure exercitationem maxime recusandae veritatis cumque eius laboriosam.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto alias hic aut necessitatibus excepturi sunt dolores esse, eaque maiores atque quidem natus rem sint voluptates voluptate ullam beatae vel veritatis aspernatur possimus deserunt. Voluptatum.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>cad 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa quo repudiandae dolor veritatis cumque corporis quaerat eligendi facere et pariatur consequuntur, nam laborum nulla ratione dolorum numquam? Ipsum saepe autem iusto laboriosam libero.</p>
+        </div>
+    </div>
+</body>
+</html>

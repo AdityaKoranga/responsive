@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h3{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div li p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        } */
+        /* div > p{/*direct child*/
+            /* color: yellow;
+            font-weight: bold;
+            background-color: green; */ 
+        /* } */
+        div + p{/*pichla sibling*/
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>this is more no selectors</h3>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li</p></li>
+            
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragarph</p>
+    </div>
+    <p>this is oyutermost paragraph</p>
+</body>
+</html>
